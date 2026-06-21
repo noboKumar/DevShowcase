@@ -27,7 +27,7 @@ const NavLinks = () => {
     <>
       {navLinks.map((link) => (
         <Link
-          className={`mx-3 font-medium text-gray-600 transition-colors hover:text-indigo-500 hover:underline active:text-gray-600 dark:text-gray-300 dark:hover:text-indigo-500 ${pathName === link.path ? "text-indigo-500 underline" : ""}`}
+          className={`mx-3 font-medium text-gray-600 transition-colors hover:text-indigo-500 active:text-gray-600 dark:text-gray-300 dark:hover:text-indigo-500 ${pathName === link.path ? "text-indigo-500 font-bold" : ""}`}
           href={link.path}
           key={link.name}
         >
