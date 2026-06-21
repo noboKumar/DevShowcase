@@ -3,32 +3,55 @@ import { TestimonialCard } from "../ui/TestimonialCard";
 
 const Testimonial = () => {
   return (
-    <section className="rounded-lg bg-slate-50 py-20 dark:bg-slate-900">
+    <section className="rounded-2xl border-2 py-20">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-slate-900 dark:text-slate-200">
-            What Developers Say
-          </h2>
-          <p className="mx-auto max-w-2xl text-slate-600 dark:text-slate-200">
-            Join thousands of developers who are already showcasing their work.
+        <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-2xl">
+            <p className="mb-3 text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+              Developer reviews
+            </p>
+            <h2 className="text-4xl font-bold tracking-tight md:text-5xl">
+              Trusted by builders who care about presentation
+            </h2>
+          </div>
+          <p className="max-w-md text-base leading-7 text-slate-600">
+            Join thousands of developers using Dev Showcase to turn shipped work
+            into sharper proof of skill.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           <TestimonialCard
-            quote="DevShowcase gave my side project the visibility it needed. I got valuable feedback from experienced devs."
+            quote="Dev Showcase gave my side project the visibility it needed. I got valuable feedback from experienced devs."
             author="Alex Rivera"
             role="Frontend Engineer"
+            rating="5.0"
           />
           <TestimonialCard
             quote="The best place to find inspiration for my next app. The quality of projects here is just outstanding."
             author="Sarah Chen"
             role="UI/UX Designer"
+            rating="4.9"
           />
           <TestimonialCard
             quote="I love how easy it is to manage my portfolio here. It's clean, fast, and exactly what I needed."
             author="Michael Johnson"
             role="Fullstack Developer"
+            rating="5.0"
           />
+        </div>
+        <div className="mt-8 grid gap-4 rounded-lg border border-white/10 bg-white/[0.04] p-5 sm:grid-cols-3">
+          <div>
+            <p className="text-2xl font-bold">96%</p>
+            <p className="mt-1 text-sm text-slate-400">found better feedback</p>
+          </div>
+          <div>
+            <p className="text-2xl font-bold">3.2x</p>
+            <p className="mt-1 text-sm text-slate-400">more portfolio visits</p>
+          </div>
+          <div>
+            <p className="text-2xl font-bold">24h</p>
+            <p className="mt-1 text-sm text-slate-400">average first review</p>
+          </div>
         </div>
       </div>
     </section>
