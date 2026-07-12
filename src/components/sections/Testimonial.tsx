@@ -14,10 +14,6 @@ const Testimonial = () => {
               Trusted by builders who care about presentation
             </h2>
           </div>
-          <p className="max-w-md text-base leading-7 text-slate-600">
-            Join thousands of developers using Dev Showcase to turn shipped work
-            into sharper proof of skill.
-          </p>
         </div>
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           <TestimonialCard
