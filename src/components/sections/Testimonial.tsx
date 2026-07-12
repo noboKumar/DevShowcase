@@ -7,7 +7,7 @@ const Testimonial = () => {
       <div className="container mx-auto px-4">
         <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <p className="mb-3 text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+            <p className="mb-3 text-sm font-semibold tracking-wide text-violet-500 uppercase">
               Developer reviews
             </p>
             <h2 className="text-4xl font-bold tracking-tight md:text-5xl">

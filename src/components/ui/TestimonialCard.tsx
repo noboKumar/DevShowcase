@@ -15,8 +15,8 @@ export function TestimonialCard({
   rating,
 }: TestimonialCardProps) {
   return (
-    <Card className="relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.06] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:border-indigo-300/40 hover:bg-white/[0.09]">
-      <div className="absolute top-4 right-4 text-white/10">
+    <Card className="relative overflow-hidden rounded-lg border border-white/10 bg-white/[0.06] text-white shadow-none transition duration-300 hover:-translate-y-1 hover:border-violet-300/40 hover:bg-white/[0.09]">
+      <div className="absolute top-4 right-4 text-slate-600/40">
         <Quote size={54} />
       </div>
       <CardContent className="relative z-10 flex min-h-72 flex-col gap-5 p-6">

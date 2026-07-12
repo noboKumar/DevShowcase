@@ -8,7 +8,7 @@ export const config = {
 
 export function middleware(req: NextRequest) {
   console.log("middleware hit:", req.nextUrl.pathname);
-  console.log("cookies:", req.cookies.getAll());
+  console.log("cookies:", req.cookies.getAll());  
 
   const session = getSessionCookie(req);
 

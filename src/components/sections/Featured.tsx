@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 const categoryTone: Record<string, string> = {
   Frontend: "border-sky-200 bg-sky-50 text-sky-700",
   Backend: "border-emerald-200 bg-emerald-50 text-emerald-700",
-  "Full Stack": "border-indigo-200 bg-indigo-50 text-indigo-700",
+  "Full Stack": "border-violet-200 bg-violet-50 text-violet-700",
   "Mobile App": "border-orange-200 bg-orange-50 text-orange-700",
   "AI / ML": "border-fuchsia-200 bg-fuchsia-50 text-fuchsia-700",
   "DevOps / Infrastructure": "border-amber-200 bg-amber-50 text-amber-700",
@@ -21,7 +21,7 @@ const categoryTone: Record<string, string> = {
   "API / SDK": "border-violet-200 bg-violet-50 text-violet-700",
   Game: "border-rose-200 bg-rose-50 text-rose-700",
   "Open Source Library": "border-lime-200 bg-lime-50 text-lime-700",
-  Other: "border-slate-200 bg-slate-50 text-slate-700",
+  Other: "border-violet-200 bg-violet-50 text-violet-700",
 };
 
 const FeaturedProjectCard = ({ project }: { project: Project }) => {
@@ -29,7 +29,7 @@ const FeaturedProjectCard = ({ project }: { project: Project }) => {
   const userInitial = project.user?.name?.charAt(0)?.toUpperCase() ?? "?";
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-xl hover:shadow-indigo-950/10 dark:border-white/10 dark:bg-slate-950 dark:hover:border-indigo-400/40">
+    <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-950/20 dark:border-white/10 dark:bg-slate-950 dark:hover:border-violet-400/30">
       <Link
         href={`/projects/${project.id}`}
         className="relative block aspect-[16/10] overflow-hidden bg-slate-100 dark:bg-slate-900"
@@ -94,7 +94,7 @@ const FeaturedProjectCard = ({ project }: { project: Project }) => {
           {project.techStack?.slice(0, 4).map((tech) => (
             <span
               key={tech}
-              className="rounded-md bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 dark:bg-white/10 dark:text-slate-300"
+              className="rounded-md bg-violet-50 px-2.5 py-1 text-xs font-semibold text-violet-600 dark:bg-violet-900/20 dark:text-violet-200"
             >
               {tech}
             </span>
@@ -108,7 +108,7 @@ const FeaturedProjectCard = ({ project }: { project: Project }) => {
                 src={project.user?.image ?? ""}
                 alt={project.user?.name ?? "User"}
               />
-              <AvatarFallback className="bg-indigo-100 text-xs font-semibold text-indigo-700">
+              <AvatarFallback className="bg-violet-100 text-xs font-semibold text-violet-700">
                 {userInitial}
               </AvatarFallback>
             </Avatar>
@@ -140,7 +140,7 @@ const Featured = async () => {
     <section className="container mx-auto px-4 py-20">
       <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div className="max-w-2xl">
-          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700 dark:border-indigo-400/30 dark:bg-indigo-400/10 dark:text-indigo-200">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1 text-sm font-medium text-violet-700 dark:border-violet-400/30 dark:bg-violet-400/10 dark:text-violet-200">
             <Sparkles className="size-4" />
             Featured this week
           </div>
